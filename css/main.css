@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=PT+Mono);
+
+body {
+  background:#F3F3F3;
+  margin:0;
+  padding:0;
+  font-family: Lato;
+  min-width: 55em;
+}
+
+#outer {
+  width: 55em;
+  margin:auto;
+}
+
+a {
+  color: #3B42B0;
+  text-decoration:none;
+}
+
+ul { list-style-type: none; }
+
+#sidebar li {
+  border-left: solid .25em #3B42B0;
+  padding: 0 .25em;
+  font-weight: 700;
+  margin: .25em;
+  opacity: .75;
+}
+
+#sidebar li:hover {
+  opacity: 1;
+}
+
+/* Sidebar */
+#sidebar {
+  position:fixed;
+  width: 15em;
+  display:block;
+  margin:auto;
+  float:left;
+}
+
+#sidebar img {
+  width:10em;
+  padding:1em 2.5em;
+}
+
+#sidebar hr {
+  width:10em;
+  border: 1px solid;
+  border-bottom: 0px;
+  opacity: .125;
+}
+
+#sidebar p {
+  font-family: PT Mono;
+  opacity: .25;
+  width:10em;
+  margin:auto;
+}
+
+/* Content */
+#content {
+  padding: 2.5em;
+  width: 35em;
+  display:block;
+  margin:auto;
+  float:right;
+}
+
+#content p, #content li{
+  font-weight:400;
+}
+
+#content li code {
+  font-family: PT Mono;
+  color: #F3F3F3;
+  background: #3B42B0;
+  border-radius:.25em;
+  padding: 0 .25em;
+  margin: 0 .125em;
+  opacity: .75;
+}
+
+#content ol, #content ul{
+  list-style-position: inside;
+  padding:0;
+}
+
+#content ul {
+  border-left: .25em solid #3B42B0;
+}
+
+#content li{
+  padding: 1em .5em;
+  border-radius:.25em;
+}
+
+#content li:nth-child(odd) {
+  background: rgba(0,0,0,.05);
+}
+
+#content li em {
+  opacity: .5;
+  font-weight:300;
+}
+
+#content td{
+  padding: .125em;
+  font-family: 'PT Mono';
+}
+
+blockquote {
+  margin:1em 0;
+  border-left: #3B42B0;
+  color: #3B42B0;
+  background: rgba(0,0,0,.1);
+  padding: .125em .75em;
+  border-radius: .25em;
+}
